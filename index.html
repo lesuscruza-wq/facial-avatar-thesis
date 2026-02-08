@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Face Avatar P2P</title>
+</head>
+<body>
+
+  <div id="app">
+    <div class="room">
+      <strong>🆔 Room ID:</strong>
+      <span id="roomId" style="font-family: monospace; color: #42a5f5;">---</span>
+    </div>
+    <button id="startBtn">🎥 Start Camera</button>
+    <button id="callBtn" disabled>📞 Call</button>
+    <button id="hangupBtn" disabled>❌ Hangup</button>
+    <p id="noteV"></p>
+  </div>
+
+  <video id="localVideo" autoplay muted playsinline></video>
+  <video id="remoteVideo" autoplay playsinline></video>
+  <canvas id="overlay"></canvas>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
+
